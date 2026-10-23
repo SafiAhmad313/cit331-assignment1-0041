@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qarshi Sports Society | Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <h1>Qarshi Sports Society</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html" class="active">Register</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="register" class="card">
+      <h2>Event Registration</h2>
+      <form id="register-form">
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Ali Khan" required minlength="3">
+            </div>
+            <div class="field">
+              <label for="email">University email</label>
+              <input type="email" id="email" name="email" placeholder="24l-0000@qu.edu.pk" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="03001234567" pattern="03[0-9]{9}" required>
+            </div>
+            <div class="field">
+              <label for="event">Event</label>
+              <select id="event" name="event" required>
+                <option value="">Choose an event</option>
+                <option value="Inter-Department Cricket Tournament">Inter-Department Cricket Tournament</option>
+                <option value="Futsal Knockout Cup">Futsal Knockout Cup</option>
+                <option value="Badminton Open">Badminton Open</option>
+                <option value="Annual Sports Day">Annual Sports Day</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="source" value="Friend" checked> Friend</label>
+            <label><input type="radio" name="source" value="Poster"> Poster</label>
+            <label><input type="radio" name="source" value="Social media"> Social media</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="confirmation" role="status"></p>
+    </section>
+
+    <section id="saved" class="card">
+      <h2>Saved Registrations</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Event</th>
+              <th>Heard from</th>
+            </tr>
+          </thead>
+          <tbody id="saved-list"></tbody>
+        </table>
+      </div>
+      <button id="clear-btn" type="button">Clear all</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Qarshi Sports Society</p>
+    <p>Built for CIT331</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
