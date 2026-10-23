@@ -16,4 +16,4 @@ Open the project folder in VS Code and use "Open with Live Server" on index.html
 ![Home page](screenshots/home.png)
 
 ## Image sources
-- images/club.jpg: <WRITE WHERE YOUR IMAGE CAME FROM>
+- images/club.jpg: https://www.instagram.com/p/C58VPxIIOBl/
