@@ -2,7 +2,7 @@
 
 A three-page website for a university sports club, built for CIT331 Assignment 1 with plain HTML, CSS and a little JavaScript.
 
-Live site: <PASTE YOUR GITHUB PAGES LINK HERE>
+Live site: https://cit331-assignment1-0041.vercel.app/
 
 ## Pages
 - index.html: society description, featured event, contact box
